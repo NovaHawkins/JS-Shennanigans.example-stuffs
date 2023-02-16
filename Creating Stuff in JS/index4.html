@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 4</title>
+
+<style>
+
+#data{
+    color:aliceblue;
+    background-color:black;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="data">My first Javascript Project</div>
+</body>
+
+<script>
+
+/*
+1. Get the div by its id
+2. Make a variable called exampleAttr and use getAttribute() to make it equal to the value of the
+attribute id of the div
+3. Set the attribute name with a value of john on the div w/ setAttribute()
+*/
+
+var data = document.getElementById('data')
+var dataID = data.getAttribute("id")
+
+var exampleAttr = document.createElement('p')
+exampleAttr.setAttribute("id", dataID)
+
+exampleAttr.setAttribute("data", dataID)
+exampleAttr.innerHTML = 'UwU'
+document.body.appendChild(exampleAttr)
+
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 6</title>
+</head>
+<body>
+    <div id="navigation" class="navbar active">
+        <ul>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Search</a>
+        </ul>
+    </div>
+</body>
+
+<script>
+
+/*
+1. Get the navigation div by its id
+2. Console.log the class names of the element using className
+3. Console.log the class names of the element using classList 
+4. Add a single class to the navigation div w/ add()
+5. Add multiple class to the navigation div w/ add()
+6. Console.log whether or not the navigation div has a specific class
+7. Remove a single class from the navigation div w/ remove()
+8. Remove multiple classes from the navigation div w/ remove()
+*/
+
+let nav = document.getElementById('navigation')
+let navClass = nav.getAttribute('class')
+
+console.log(navClass)
+
+
+</script>
+
+</html>

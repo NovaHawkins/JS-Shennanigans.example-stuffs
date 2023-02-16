@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 7</title>
+
+<style>
+
+.pink{
+    color:rgb(255, 81, 209);
+}
+
+</style>
+
+</head>
+<body>
+    <h1 id="color" class="pink">Please choose a color</h1>
+    <button onclick="leFunction()">Le button</button>
+</body>
+
+<script>
+
+/*
+1. Use the toggle method to remove the class “pink” from the element
+2. Use the toggle method to add the class “pink” to the element
+*/
+
+function leFunction(){
+    document.getElementById("color").classlist.toggle("pink")
+}
+
+</script>
+
+</html>
